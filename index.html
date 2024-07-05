@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Here is a Calculator that perform arthimatic operations.</h1>
+        <div class="calc">
+            <table>
+                <tr>
+                    <td colspan="4"><input type="text" id="display" class="display" readonly></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-clear" onclick="ClearDisplay()">CE</button></td>
+                    <td><button class="btn btn-clear" onclick="Delete()">Del</button></td>
+                    <td><button class="btn btn-operator" onclick="AppendDisplay('/')">/</button></td>
+                    <td><button class="btn btn-operator" onclick="AppendDisplay('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="AppendDisplay('7')">7</button></td>
+                    <td><button class="btn" onclick="AppendDisplay('8')">8</button></td>
+                    <td><button class="btn" onclick="AppendDisplay('9')">9</button></td>
+                    <td><button class="btn btn-operator" onclick="AppendDisplay('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="AppendDisplay('4')">4</button></td>
+                    <td><button class="btn" onclick="AppendDisplay('5')">5</button></td>
+                    <td><button class="btn" onclick="AppendDisplay('6')">6</button></td>
+                    <td><button class="btn btn-operator" onclick="AppendDisplay('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="AppendDisplay('1')">1</button></td>
+                    <td><button class="btn" onclick="AppendDisplay('2')">2</button></td>
+                    <td><button class="btn" onclick="AppendDisplay('3')">3</button></td>
+                    <td rowspan="2"><button class="btn btn-equal" onclick="Calculate()">=</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="AppendDisplay('0')">0</button></td>
+                    <td><button class="btn" onclick="AppendDisplay('00')">00</button></td>
+                    <td><button class="btn" onclick="AppendDisplay('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
